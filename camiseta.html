@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modelo da Camiseta - Paulo Ryan</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: url('39956942.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      position: relative;
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.7);
+      border-bottom: 5px solid #ff9800;
+    }
+
+    header img {
+      width: 120px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+
+    .bandeira {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      width: 60px; /* menor tamanho */
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 10px 0;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .countdown {
+      font-size: 1.5rem;
+      margin: 20px 0;
+      font-weight: bold;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .local {
+      margin: 40px 0;
+    }
+
+    .local h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .local img {
+      width: 250px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+    }
+
+    .mensagem {
+      font-size: 1.2rem;
+      margin: 40px;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 20px;
+      padding: 15px 25px;
+      background: linear-gradient(45deg, #ff9800, #4caf50);
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+    }
+
+    .btn:hover {
+      background: linear-gradient(45deg, #e68900, #43a047);
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 30px;
+      padding: 20px;
+      background: rgba(0,0,0,0.6);
+      font-size: 0.9rem;
+      border-top: 5px solid #ff9800;
+    }
+
+    /* Media Queries para Responsividade */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .countdown {
+        font-size: 1.2rem;
+      }
+
+      .local img {
+        width: 200px;
+        height: 120px;
+      }
+
+      .mensagem {
+        font-size: 1rem;
+        margin: 20px;
+      }
+
+      .btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header img {
+        width: 100px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .countdown {
+        font-size: 1rem;
+      }
+
+      .local img {
+        width: 150px;
+        height: 90px;
+      }
+
+      .mensagem {
+        font-size: 0.9rem;
+        margin: 10px;
+      }
+
+      .btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+      }
+    }
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .imagem-camiseta {
+      max-width: 100%;
+      height: auto;
+      margin: 20px 0;
+      border: 2px solid #4caf50;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .mensagem {
+      font-size: 1.2rem;
+      margin: 20px 0;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 20px;
+      padding: 15px 25px;
+      background: linear-gradient(45deg, #ff9800, #4caf50);
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    }
+
+    .btn:hover {
+      background: linear-gradient(45deg, #e68900, #43a047);
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+<h1>Modelo da Camiseta</h1>
+<img src="WhatsApp Image 2025-08-25 at 10.50.00.jpeg" alt="Modelo da Camiseta" class="imagem-camiseta">
+
+<div class="mensagem">
+  <p>
+    O valor da camiseta ainda não está definido. 
+    Todas as atualizações sobre preços e informações serão postadas no grupo. 
+    Fique atento!
+  </p>
+</div>
+
+<a href="https://chat.whatsapp.com/FlCfLHUSMQZ46mA5jkgIJS" class="btn" target="_blank">Entrar no Grupo</a>
+
+</body>
+</html>

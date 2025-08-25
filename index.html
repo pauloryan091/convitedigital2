@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convite 18 anos - Paulo Ryan</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: url('39956942.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      position: relative;
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.7);
+      border-bottom: 5px solid #ff9800;
+    }
+
+    header img {
+      width: 120px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+
+    .bandeira {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      width: 60px; /* menor tamanho */
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 10px 0;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .countdown {
+      font-size: 1.5rem;
+      margin: 20px 0;
+      font-weight: bold;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .local {
+      margin: 40px 0;
+    }
+
+    .local h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .local img {
+      width: 250px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+    }
+
+    .mensagem {
+      font-size: 1.2rem;
+      margin: 40px;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 20px;
+      padding: 15px 25px;
+      background: linear-gradient(45deg, #ff9800, #4caf50);
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+    }
+
+    .btn:hover {
+      background: linear-gradient(45deg, #e68900, #43a047);
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 30px;
+      padding: 20px;
+      background: rgba(0,0,0,0.6);
+      font-size: 0.9rem;
+      border-top: 5px solid #ff9800;
+    }
+
+    /* Media Queries para Responsividade */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .countdown {
+        font-size: 1.2rem;
+      }
+
+      .local img {
+        width: 200px;
+        height: 120px;
+      }
+
+      .mensagem {
+        font-size: 1rem;
+        margin: 20px;
+      }
+
+      .btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header img {
+        width: 100px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .countdown {
+        font-size: 1rem;
+      }
+
+      .local img {
+        width: 150px;
+        height: 90px;
+      }
+
+      .mensagem {
+        font-size: 0.9rem;
+        margin: 10px;
+      }
+
+      .btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg" 
+       alt="Bandeira do Brasil" class="bandeira">
+  <img src="360_F_642451254_a0beP1JhVekdkCXdUhy2rufdnt5suozM-removebg-preview.png" alt="Tucunaré">
+  <h1>🎉 18 anos do Paulo Ryan 🎉</h1>
+  <p class="countdown" id="contador"></p>
+</header>
+
+<section class="local">
+  <h2>📍 Local: Serra da Mesa - GO</h2>
+  <img src="maxresdefault (1).jpg" alt="Serra da Mesa 1">
+  <img src="maxresdefault (2).jpg" alt="Serra da Mesa 2">
+  <img src="maxresdefaultr.jpg" alt="Pescaria">
+</section>
+
+<section class="mensagem">
+  <p>
+    Este não é apenas mais um aniversário, é a celebração dos meus 18 anos: um marco de novas responsabilidades, sonhos e conquistas. 
+    Quero compartilhar esse momento especial com pessoas que fazem parte da minha vida. 
+    Vem comemorar comigo na beira do lago, cercado de boas energias e boas mentiras de pescaria! 🎣
+  </p>
+</section>
+
+<a href="https://pt.wikipedia.org/wiki/Lago_de_Serra_da_Mesa" class="btn" target="_blank">Saiba Mais</a>
+<a href="https://chat.whatsapp.com/FlCfLHUSMQZ46mA5jkgIJS" class="btn" target="_blank">Entrar no Grupo</a>
+<a href="camiseta.html" class="btn" target="_blank">Modelo da Camiseta</a>
+
+<footer>
+  <p>© 2025 Paulo Ryan – Todos os direitos reservados.</p>
+</footer>
+
+<script>
+  // Contagem regressiva
+  const dataAlvo = new Date("Sep 25, 2025 00:00:00").getTime();
+  const contador = document.getElementById("contador");
+
+  setInterval(() => {
+    const agora = new Date().getTime();
+    const distancia = dataAlvo - agora;
+
+    const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+    const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+    const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
+
+    contador.innerHTML = `${dias}d ${horas}h ${minutos}m ${segundos}s`;
+  }, 1000);
+</script>
+</body>
+</html>
